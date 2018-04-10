@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+compileJava.options.encoding = 'UTF-8'
+
+group 'pics'
+version '1.0-SNAPSHOT'
+mainClassName = "com.pythonteam.Main"
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'io.vertx:vertx-web:3.5.1'
+    compile files('jpicusb.jar')
+}
